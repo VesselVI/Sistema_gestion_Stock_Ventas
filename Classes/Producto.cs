@@ -8,12 +8,21 @@ namespace Sistema_gestion_Stock_Ventas.Classes
 {
     public abstract class Producto
     {
-        public abstract string codigo { get; set; }
-        public abstract string nombre { get; set; }
-        public abstract string precio { get; set; }
-        public abstract int stock { get; set; }
+        public  string codigo { get; set; }
+        public  string nombre { get; set; }
+        public  string precio { get; set; }
+        public int stock { get; set; }
 
         public abstract int calcularCuotas(int cuotas);
+
+        
+
+        public override int calculcarCuotas(int cuotas)
+        {
+            decimal precioDecimal = decimal.Parse(this.precio);
+            decimal precioConInteres = precioDecimal * (1 + (0.1m * cuotas));
+            return 0;
+        }
 
     }
 }
