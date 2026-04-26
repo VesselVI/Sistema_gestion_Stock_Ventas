@@ -11,11 +11,9 @@ namespace Sistema_gestion_Stock_Ventas.Classes
         public abstract string codigo { get; set; }
         public abstract string nombre { get; set; }
         public abstract string precio { get; set; }
-        public abstract string stock { get; set; }
+        public abstract int stock { get; set; }
 
-        public void registrarVenta() { }
-        
-        public abstract int calcularCuotas();
+        public abstract int calcularCuotas(int cuotas);
 
     }
 }

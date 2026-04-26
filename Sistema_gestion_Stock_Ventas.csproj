@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Classes\Heladera.cs" />
     <Compile Include="Classes\Lavarropas.cs" />
+    <Compile Include="Classes\Sucursal.cs" />
     <Compile Include="Classes\Televisor.cs" />
     <Compile Include="Classes\Producto.cs" />
     <Compile Include="Program.cs" />
