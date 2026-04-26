@@ -8,6 +8,8 @@ namespace Sistema_gestion_Stock_Ventas.Classes
 {
     abstract class Heladera
     {
-        public abstract string codigo { get; set; }
+        public string capacidadLitros { get; set; }
+        public string tipoDeHeladera { get; set; }
+
     }
 }

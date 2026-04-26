@@ -8,5 +8,8 @@ namespace Sistema_gestion_Stock_Ventas.Classes
 {
     internal class Televisor
     {
+        public int pulgadas { get; set; }
+        public string tipoDePantalla { get; set; }
+
     }
 }
